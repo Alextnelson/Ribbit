@@ -89,7 +89,7 @@
             </objects>
             <point key="canvasLocation" x="1323" y="532"/>
         </scene>
-        <!--Camera View Controller Table View Controller-->
+        <!--Recipients-->
         <scene sceneID="J2W-2V-0rY">
             <objects>
                 <tableViewController id="iyE-eb-Vtp" customClass="CameraViewControllerTableViewController" sceneMemberID="viewController">
@@ -98,7 +98,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="camera" id="w7F-MO-cuF">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="recipient" id="w7F-MO-cuF">
                                 <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w7F-MO-cuF" id="c6f-iA-ykn">
@@ -112,7 +112,18 @@
                             <outlet property="delegate" destination="iyE-eb-Vtp" id="uKR-id-Ezc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="AUe-px-Qge"/>
+                    <navigationItem key="navigationItem" title="Recipients" id="AUe-px-Qge">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="1na-dT-6eW">
+                            <connections>
+                                <action selector="cancel:" destination="iyE-eb-Vtp" id="FBk-J3-mPr"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Send" id="mwd-L2-4Mx">
+                            <connections>
+                                <action selector="send:" destination="iyE-eb-Vtp" id="d3B-4B-wP6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oLG-UM-7Z5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,7 +138,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="K00-G9-iMm">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="K00-G9-iMm">
                                 <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K00-G9-iMm" id="eyx-WH-Tdd">
