@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  InboxTableViewController.h
 //  Ribbit
 //
 //  Created by Alexander Nelson on 10/23/15.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
-@interface SecondViewController : UIViewController
-
+@interface InboxTableViewController : UITableViewController
+- (IBAction)logout:(id)sender;
 
 @end
-
